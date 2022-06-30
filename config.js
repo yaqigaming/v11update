@@ -8,7 +8,7 @@ global.owner = [
   // [number, dia creator/owner?, dia developer?]
 ] // Put your number here
 global.mods = [] // Want some help?
-global.prems = [] // Premium user has unlimited limit
+global.prems = [6287805669475,6287771960072] // Premium user has unlimited limit
 global.APIs = { // API Prefix
   // name: 'https://website'
   nrtm: 'https://nurutomo.herokuapp.com',
@@ -40,8 +40,8 @@ process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0
 const spack = fs.readFileSync("lib/exif.json")
 const stickerpack = JSON.parse(spack)
 if (stickerpack.spackname == '') {
-  var sticker_name = ' '
-  var sticker_author = ' '
+  var sticker_name = '.'
+  var sticker_author = '.'
 } else {
   var sticker_name = stickerpack.spackname
   var sticker_author = stickerpack.sauthor
@@ -56,9 +56,9 @@ fs.watchFile(file_exif, () => {
 })
 
 // Sticker WM
-global.packname = sticker_name
-global.author = sticker_author
-global.wm = ' '
+global.packname = .
+global.author = .
+global.wm = '.'
 
 global.multiplier = 1000 // The higher, The harder levelup
 
